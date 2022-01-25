@@ -1,3 +1,16 @@
+
+/* Custom Fonts */
+
+@font-face {
+  font-family: 'Opposit Bold';
+  src: url('Opposit-Bold.otf') format("OpenType");
+}
+
+@font-face {
+  font-family: 'Byrid Regular';
+  src: url('Byrd-Regular.otf') format("OpenType");
+}
+
 /* Color custom properties */
 
 :root,
@@ -2175,7 +2188,7 @@ input[type='checkbox'] {
   }
 
   .header--middle-left {
-    grid-template-areas: 'heading navigation icons';
+    grid-template-areas: 'navigation heading icons';
     grid-template-columns: auto auto 1fr;
     column-gap: 2rem;
   }
@@ -2207,7 +2220,7 @@ input[type='checkbox'] {
 .header__heading,
 .header__heading-link {
   grid-area: heading;
-  justify-self: center;
+  justify-self: end;
 }
 
 .header__heading-link {
@@ -2245,7 +2258,7 @@ input[type='checkbox'] {
 
   .header__heading,
   .header__heading-link {
-    justify-self: start;
+    justify-self: end;
   }
 
   .header--top-center .header__heading-link,
